@@ -15,12 +15,12 @@ const PORT = process.env.PORT || 5050;
 // Middlewares
 app.use(cors());
 app.use(express.json()); //includes body-parser
-app.use(session({secret: 'jamesmo',resave: false, saveUninitialized: false}));
+app.use(session({secret: 'jameswwwww',resave: false, saveUninitialized: false}));
 app.use(passport.initialize());
 app.use(passport.session());
 
 
-app.use('/', userRoutes);
+app.use('/api', userRoutes);
 
 
 // Connect to MongoDB
@@ -29,6 +29,8 @@ mongoose.connect(db);
 
 
 // Define routes and middleware
+
+
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });

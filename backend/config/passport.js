@@ -7,11 +7,12 @@ const {googleClientId, googleClientSecret} = require('../config/keys.js')
 passport.use(new GoogleStrategy({
     clientID:     googleClientId,
     clientSecret: googleClientSecret,
-    callbackURL: "http://localhost:5050/google/callback",
+    callbackURL: "http://localhost:5050/api/google/callback",
     passReqToCallback   : true
   },
   function(request, accessToken, refreshToken, profile, done) {
-
+    profile.accessToken = accessToken;
+    profile.refreshToken = refreshToken;
     // User.findOrCreate({ googleId: profile.id }, function (err, user) {
     //   return done(err, user);
     // });
