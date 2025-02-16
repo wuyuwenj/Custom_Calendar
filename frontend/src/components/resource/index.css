@@ -1,0 +1,32 @@
+.rbc-event {
+    padding: 0px !important;
+    border-radius: 0px !important;
+    border: none !important;
+    background-color: transparent !important;
+    position: relative;
+    z-index: 2;
+}
+.rbc-btn-group{
+    display: none !important
+}
+.rbc-time-slot {
+    
+    color: #74a4c3;
+    z-index: 1;
+}
+
+.rbc-time-column{
+    background-color: #d8d9db;
+}
+
+.rbc-event-label {
+    display: none !important;
+}
+
+.rbc-events-container {
+    width: 100% !important;
+}
+
+.rbc-timeslot-group {
+    min-height: 120px !important;
+}
