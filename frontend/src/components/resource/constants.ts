@@ -38,6 +38,7 @@ export const EVENTS: EventItem[] = [
         address: "Block 1\nSStreet 32\nLong Island\nNew York",
       },
     },
-    resourceId: 2,
+    resourceId: 4,
   },
 ];
+
